@@ -5,5 +5,3 @@ bundle.js
 compiled/
 *DS_Store
 stocks/
-static/js/main.js
-package-lock.json
