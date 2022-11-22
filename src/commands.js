@@ -6,7 +6,7 @@ export type CommandType = {|
             searchurl ?: string,
 |};
 
-export type CommandNames = 'wut' | 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
+export type CommandNames = 'dm' | 'wut' | 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
     'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,11 @@ export type ColumnDataTableType = {|
             |};
 
 export const COMMANDS: { [CommandNames]: CommandType } = {
+    dm: {
+        name: "Dealmoon",
+        url: "https://dealmoon.com/",
+        searchurl: "https://www.dealmoon.com/cn/top/"
+    },
     fb: {
         name: "Facebook",
         url: "https://facebook.com/",
