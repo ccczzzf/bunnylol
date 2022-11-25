@@ -6,7 +6,7 @@ export type CommandType = {|
             searchurl ?: string,
 |};
 
-export type CommandNames = 'dm' | 'wut' | 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
+export type CommandNames = 'sheet' | 'doc' | 'dm' | 'wut' | 'fb' | 'm' | 'mw' | 'wa' | 'waw' | 'gm' | 'sis' | 'col' | 'yt' | 'tv' | 'gh' | 'r' | 'l' | 'me' | 'ig' | 'tw' | 'tr' | 'vs' | 'todo' |
     'c' | 'wf' | '$' | 'cal' | 'uvacovid' | 'hs' | 'p' | 'n' | 'h' | 'pv' | 'gd' | 'wp' | 'wsj' | 'cnn' | 'wiki' | 'g' | 'DEFAULT';
 
 export type CommandDataTableType = {|
@@ -21,6 +21,16 @@ export type ColumnDataTableType = {|
             |};
 
 export const COMMANDS: { [CommandNames]: CommandType } = {
+    sheet: {
+        name: "Google Sheet",
+        url: "https://docs.google.com/spreadsheets/u/0/?tgif=d",
+        searchurl: "https://docs.google.com/spreadsheets/u/0/?tgif=d&q="
+    },
+    doc: {
+        name: "Google Docs",
+        url: "https://docs.google.com/document/u/0/",
+        searchurl: "https://docs.google.com/document/u/0/?q="
+    },
     dm: {
         name: "Dealmoon",
         url: "https://dealmoon.com/",
